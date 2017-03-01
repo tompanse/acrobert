@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		174AE62084FA66E03EA4CC9B /* Pods_acrobert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB033DF6345FC585C8D510F /* Pods_acrobert.framework */; };
 		6FE958FA1E6683C7006FA0FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE958F91E6683C7006FA0FF /* AppDelegate.swift */; };
 		6FE958FC1E6683C7006FA0FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE958FB1E6683C7006FA0FF /* ViewController.swift */; };
 		6FE958FF1E6683C7006FA0FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FE958FD1E6683C7006FA0FF /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08843B07856C44C5A431043D /* Pods-acrobert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acrobert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-acrobert/Pods-acrobert.debug.xcconfig"; sourceTree = "<group>"; };
+		66F4F1CDCB51C2E2A2126729 /* Pods-acrobert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-acrobert.release.xcconfig"; path = "Pods/Target Support Files/Pods-acrobert/Pods-acrobert.release.xcconfig"; sourceTree = "<group>"; };
 		6FE958F61E6683C7006FA0FF /* acrobert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = acrobert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE958F91E6683C7006FA0FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FE958FB1E6683C7006FA0FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,8 @@
 		6FE9590A1E6683C7006FA0FF /* acrobertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = acrobertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE9590E1E6683C7006FA0FF /* acrobertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acrobertUITests.swift; sourceTree = "<group>"; };
 		6FE959101E6683C7006FA0FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98BFB2DC4EF9C4A3E172BD4 /* Pods_acrobertUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_acrobertUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCB033DF6345FC585C8D510F /* Pods_acrobert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_acrobert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174AE62084FA66E03EA4CC9B /* Pods_acrobert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +62,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2190C156843EE5720FB8E3F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08843B07856C44C5A431043D /* Pods-acrobert.debug.xcconfig */,
+				66F4F1CDCB51C2E2A2126729 /* Pods-acrobert.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6FE958ED1E6683C7006FA0FF = {
 			isa = PBXGroup;
 			children = (
 				6FE958F81E6683C7006FA0FF /* acrobert */,
 				6FE9590D1E6683C7006FA0FF /* acrobertUITests */,
 				6FE958F71E6683C7006FA0FF /* Products */,
+				2190C156843EE5720FB8E3F6 /* Pods */,
+				853714F378AD08885B7A0380 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +113,15 @@
 			path = acrobertUITests;
 			sourceTree = "<group>";
 		};
+		853714F378AD08885B7A0380 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCB033DF6345FC585C8D510F /* Pods_acrobert.framework */,
+				F98BFB2DC4EF9C4A3E172BD4 /* Pods_acrobertUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FE959131E6683C7006FA0FF /* Build configuration list for PBXNativeTarget "acrobert" */;
 			buildPhases = (
+				9A7E4DFDD56006657544DE5D /* [CP] Check Pods Manifest.lock */,
 				6FE958F21E6683C7006FA0FF /* Sources */,
 				6FE958F31E6683C7006FA0FF /* Frameworks */,
 				6FE958F41E6683C7006FA0FF /* Resources */,
+				E0BC47952248A528DF2839D2 /* [CP] Embed Pods Frameworks */,
+				34EC676436CA1164EC787AD3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +224,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34EC676436CA1164EC787AD3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-acrobert/Pods-acrobert-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A7E4DFDD56006657544DE5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0BC47952248A528DF2839D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-acrobert/Pods-acrobert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6FE958F21E6683C7006FA0FF /* Sources */ = {
@@ -337,6 +414,7 @@
 		};
 		6FE959141E6683C7006FA0FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08843B07856C44C5A431043D /* Pods-acrobert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 32U2399J5P;
@@ -350,6 +428,7 @@
 		};
 		6FE959151E6683C7006FA0FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66F4F1CDCB51C2E2A2126729 /* Pods-acrobert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 32U2399J5P;
